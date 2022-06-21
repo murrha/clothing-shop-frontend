@@ -2,7 +2,23 @@
   <div class="logo">
     <h1><a href="#">Clothing Apparel</a></h1>
   </div>
+
+  <!-- search bar, shopping cart to the left -->
+  <div class="homepage-components">
+    <app-search></app-search>
+    <app-cart></app-cart>
+    <app-login></app-login>
+  </div>
+
 </div>
+
+<hr>
+
+<!-- list of categories -->
+<app-category-list></app-category-list>
+
+<!-- main content -->
+<router-outlet></router-outlet>
 
 
 <footer>

@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Readex+Pro&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,15 +8,18 @@
 
 body{
     background-color: #fff;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 a{
     text-decoration: none;
+    color: black; 
 }
 
 h1{
     text-align: center;
     margin: 10px; 
+    font-weight: bold;
 }
 
 footer ul{
@@ -27,6 +32,18 @@ footer ul{
     align-items: center;
 }
 
+.brand-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px; 
+}
+
 .copyright{
     text-align: center; 
+}
+
+.logo, .homepage-components{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
