@@ -1,0 +1,27 @@
+img{
+    height: 300px;
+    width: 300px; 
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.image{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.product-list ul li{
+    list-style: none;
+    flex: 0  0 33.33%; 
+}

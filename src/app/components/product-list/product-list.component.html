@@ -1,1 +1,10 @@
-<p>product-list works!</p>
+<div class="product-list">
+    <ul>
+        <li *ngFor="let product of products">
+            <a href="/product/{{product.name}}">
+                <img src="{{product.imageUrl}}" class="image">
+                <h4>{{product.name}}</h4>
+            </a>
+        </li>
+    </ul>
+</div>
