@@ -3,7 +3,9 @@
         <li *ngFor="let product of products">
             <a href="/product/{{product.name}}">
                 <img src="{{product.imageUrl}}" class="image">
-                <h4>{{product.name}}</h4>
+                <h3>{{product.name}}</h3>
+                <h4>{{product.price | currency: 'USD'}}</h4>
+                <button class="add-to-cart">Add to cart</button>
             </a>
         </li>
     </ul>

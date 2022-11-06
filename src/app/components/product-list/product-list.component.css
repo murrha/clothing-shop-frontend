@@ -1,6 +1,6 @@
 img{
-    height: 300px;
-    width: 300px; 
+    height: 250px;
+    width: 250px; 
 }
 
 ul{
@@ -9,15 +9,21 @@ ul{
     flex-wrap: wrap; 
 }
 
+.add-to-cart{
+    padding: 5px;
+    text-align: center; 
+    border-radius: 25px; 
+    color: #fff;
+    background-color: #000;
+}
 .image{
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .product-list{
     display: flex;
     justify-content: center;
-    gap: 10px;
     text-align: center;
 }
 
@@ -25,3 +31,4 @@ ul{
     list-style: none;
     flex: 0  0 33.33%; 
 }
+
