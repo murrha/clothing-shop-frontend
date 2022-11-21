@@ -1,0 +1,13 @@
+<p>category-products works!</p>
+<div class="category-product-list">
+    <ul>
+        <li *ngFor="let categoryProduct of categoryProducts">
+            <a href="/category/{{categoryProduct.name}}">
+                <!--<img src="{{product.imageUrl}}" class="image">
+                <h3>{{product.name}}</h3>
+                <h4>{{product.price | currency: 'USD'}}</h4>
+                <button class="add-to-cart">Add to cart</button>-->
+            </a>
+        </li>
+    </ul>
+</div>

@@ -12,6 +12,7 @@ import { CategoryListComponent } from './components/category-list/category-list.
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CategoryProductsComponent } from './components/category-products/category-products.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginComponent,
     CategoryListComponent,
     ProductListComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CategoryProductsComponent
   ],
   imports: [
     BrowserModule,
