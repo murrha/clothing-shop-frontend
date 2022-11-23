@@ -1,11 +1,15 @@
 <div class="product-list">
     <ul>
         <li *ngFor="let product of products">
-            <a href="/product/{{product.name}}">
+            <a href="/product/{{product.name}}"
+            [routerLink]="['/product', product.id]"
+            >
                 <img src="{{product.imageUrl}}" class="image">
-                <h3>{{product.name}}</h3>
+                <h3>
+                  {{product.name}}
+                </h3>
                 <h4>{{product.price | currency: 'USD'}}</h4>
-                <button class="add-to-cart">Add to cart</button>
+                <button class="add-to-cart" (click)="addToCart(product)">Add to cart</button>
             </a>
         </li>
     </ul>

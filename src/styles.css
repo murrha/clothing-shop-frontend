@@ -13,11 +13,11 @@ body{
 
 a{
     text-decoration: none;
-    color: black; 
+    color: black;
 }
 
 h1{
-    margin: 10px; 
+    margin: 10px;
     font-weight: bold;
 }
 
@@ -34,56 +34,21 @@ footer ul{
 .brand-container{
     display: flex;
     justify-content: space-between;
-    padding: 8px; 
+    padding: 8px;
 }
 
 .copyright{
-    text-align: center; 
+    text-align: center;
 }
 
 .logo, .homepage-components{
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
-/*for the carousel */
-ngb-carousel {
-    max-width: 700px;
-    margin: 50px auto;
+#cart {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
 }
-ngb-carousel img {
-    width: 100%;
-    outline: none;
-}
-ngb-carousel {
-    width: inherit;
-    height: inherit;
-}
-.carousel-inner {
-    overflow: visible;
-}
-.carousel-item {
-    display: flex !important;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1.2s ease-in-out, visibility 1.2s;
-    z-index: -1;
-}
-.carousel-item.active{
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-.carousel-control-prev {
-     z-index: 20;
-}
-
-.carousel-control-next {
-     z-index: 20;
-}
-.carousel-indicators{
-    z-index: 20;
-}
-
-/*end for the carousel */

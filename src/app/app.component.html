@@ -6,7 +6,9 @@
   <!-- search bar, shopping cart to the left -->
   <div class="homepage-components">
     <app-search></app-search>
-    <app-cart></app-cart>
+    <a routerLink="/cart" >
+      <img src="assets/images/icons/shopping-cart.png" id="cart">
+  </a>
     <app-login></app-login>
   </div>
 
@@ -17,8 +19,8 @@
 <!-- list of categories -->
 <app-category-list></app-category-list>
 
-<!-- carousel of images -->
-<p>insert carousel here</p>
+<!-- carousel of images
+<p>insert carousel here</p>-->
 
 <!-- main content -->
 <router-outlet></router-outlet>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/product';
 import { ProductService } from 'src/app/product.service';
+import { CartService } from 'src/app/cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -9,12 +10,12 @@ import { ProductService } from 'src/app/product.service';
 })
 export class ProductListComponent implements OnInit {
 
-  products?: Product[]; 
+  products?: Product[];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private cartService: CartService) { }
 
   ngOnInit(): void {
-    this.retrieveProducts(); 
+    this.retrieveProducts();
   }
 
   retrieveProducts(): void{
@@ -26,6 +27,11 @@ export class ProductListComponent implements OnInit {
       },
       error: (e) => console.error(e)
     });
+  }
+
+  addToCart(product: Product){
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
   }
 
 }
