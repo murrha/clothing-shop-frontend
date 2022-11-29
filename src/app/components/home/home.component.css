@@ -1,0 +1,51 @@
+.sale img{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+/*using flexbox for grid*/
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.category-icon{
+  max-height: 750px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
+
+ngb-carousel{
+  padding: 50px;
+}
+
+nbg-carousel
+ .picsum-img-wrapper{
+  position: relative;
+  height: 0;
+  padding-top: 55%;
+ }
+
+ nbg-carousel
+ .picsum-img-wrapper > img{
+  position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+ }
+
+ .picsum-img-wrapper img{
+  display: block;
+  width: 100%;
+ }

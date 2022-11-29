@@ -1,0 +1,21 @@
+a{
+  color: black;
+}
+
+.brand-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.logo, .homepage-components{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#cart {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}

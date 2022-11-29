@@ -1,36 +1,7 @@
-<div class="brand-container">
-  <div class="logo">
-    <h1><a href="#">Clothing Apparel</a></h1>
-  </div>
-
-  <!-- search bar, shopping cart to the left -->
-  <div class="homepage-components">
-    <app-search></app-search>
-    <a routerLink="/cart" >
-      <img src="assets/images/icons/shopping-cart.png" id="cart">
-  </a>
-    <app-login></app-login>
-  </div>
-
-</div>
-
+<app-navbar></app-navbar>
 <hr>
-
-<!-- list of categories -->
-<app-category-list></app-category-list>
-
-<!-- carousel of images
-<p>insert carousel here</p>-->
 
 <!-- main content -->
 <router-outlet></router-outlet>
 
-
-<footer>
-  <ul>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">Contact us</a></li>
-    <li><a href="#">Socials</a></li>
-  </ul>
-  <p class="copyright">© Marja Katrina Centina.</p>
-</footer>
+<app-footer></app-footer>

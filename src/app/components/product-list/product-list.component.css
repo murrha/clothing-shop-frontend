@@ -22,9 +22,13 @@ ul{
 }
 
 .product-list{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
+
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .product-list ul li{
@@ -32,3 +36,7 @@ ul{
     flex: 0  0 33.33%;
 }
 
+.product-item{
+  padding: 10px;
+  background-color: #ccc;
+}

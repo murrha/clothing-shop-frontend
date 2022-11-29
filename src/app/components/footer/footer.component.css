@@ -1,0 +1,14 @@
+footer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+}
